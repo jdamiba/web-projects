@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <form  class="form wrapper" id="form">
+        <h2>Register for an account!</h2>
+        <div class="form-control">
+            <label for="Username">Username</label>
+            <input type="text" id="username" placeholder="Enter a username">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="Email">Email address</label>
+          <input type="email" id="email" aria-describedby="emailHelp">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="Password">Password</label>
+          <input type="password" id="password">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" id="password2">
+            <small>Error message</small>
+          </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
