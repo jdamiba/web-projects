@@ -5,30 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Register</title>
+    <title>Wedding Reception R.S.V.P. Form</title>
   </head>
   <body>
     <div class="container">
       <form  class="form wrapper" id="form">
-        <h2>Register for an account!</h2>
+        <h2>Event Registration Form</h2>
         <div class="form-control">
-            <label for="Username">Username</label>
-            <input type="text" id="username" placeholder="Enter a username">
+            <label for="Name">Name</label>
+            <input type="text" id="name">
             <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="Email">Email address</label>
-          <input type="email" id="email" aria-describedby="emailHelp">
+          <label for="Email">Email Address</label>
+          <input type="email" id="email">
           <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="Password">Password</label>
-          <input type="password" id="password">
+          <label for="Food Choice">Your Lunch Selection</label>
+          <select id="food_choice">
+            <option>Vegan Fried Rice</option>
+            <option>Fish and Chips</option>
+            <option>Chili Con Carne</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="Guest">Are You Bringing A Guest?</label>
+          <select id="guest">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+        <div class="form-control" id="guest_food">
+          <label for="GuestFoodChoice">Guest Lunch Selection</label>
+          <select id="guest_food_choice">
+            <option>Vegan Fried Rice</option>
+            <option>Fish and Chips</option>
+            <option>Chili Con Carne</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="Password">Reservation Number</label>
+          <input type="password" id="reservation_number">
           <small>Error message</small>
         </div>
         <div class="form-control">
-            <label for="exampleInputPassword1">Confirm Password</label>
-            <input type="password" id="password2">
+            <label for="exampleInputPassword1">Confirm Reservation Number</label>
+            <input type="password" id="reservation_number_2">
             <small>Error message</small>
           </div>
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
